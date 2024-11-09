@@ -1,0 +1,163 @@
+[
+    {
+      "id": 1,
+      "gender": "F",
+      "image": "http://dummyimage.com/146x139.png/dddddd/000000",
+      "price": 1500,
+      "nombre": "Camiseta Femenina Entrenamiento",
+      "description": "Camiseta de entrenamiento femenina del Club Nacional de Football, ideal para entrenamientos y actividad física."
+    },
+    {
+      "id": 2,
+      "gender": "M",
+      "image": "http://dummyimage.com/124x121.png/dddddd/000000",
+      "price": 1700,
+      "nombre": "Camiseta Masculina Partido",
+      "description": "Camiseta oficial masculina del Club Nacional de Football, utilizada en partidos y diseñada para máxima comodidad."
+    },
+    {
+      "id": 3,
+      "gender": "F",
+      "image": "http://dummyimage.com/119x118.png/5fa2dd/ffffff",
+      "price": 1300,
+      "nombre": "Top Deportivo Femenino",
+      "description": "Top deportivo femenino del Club Nacional de Football, ofrece soporte y transpirabilidad."
+    },
+    {
+      "id": 4,
+      "gender": "F",
+      "image": "http://dummyimage.com/149x172.png/dddddd/000000",
+      "price": 950,
+      "nombre": "Camiseta Femenina Casual",
+      "description": "Camiseta casual para fanáticas del Club Nacional de Football, cómoda y perfecta para el día a día."
+    },
+    {
+      "id": 5,
+      "gender": "F",
+      "image": "http://dummyimage.com/104x155.png/dddddd/000000",
+      "price": 1900,
+      "nombre": "Pantalones Deportivos Femeninos",
+      "description": "Pantalones deportivos femeninos del Club Nacional de Football, ideales para entrenamiento o uso casual."
+    },
+    {
+      "id": 6,
+      "gender": "M",
+      "image": "http://dummyimage.com/215x190.png/5fa2dd/ffffff",
+      "price": 1250,
+      "nombre": "Short Deportivo Masculino",
+      "description": "Short deportivo masculino del Club Nacional de Football, cómodo y ligero para entrenamientos intensos."
+    },
+    {
+      "id": 7,
+      "gender": "F",
+      "image": "http://dummyimage.com/173x175.png/ff4444/ffffff",
+      "price": 750,
+      "nombre": "Medias de Entrenamiento",
+      "description": "Medias de entrenamiento para mujer del Club Nacional de Football, de alta durabilidad y confort."
+    },
+    {
+      "id": 8,
+      "gender": "F",
+      "image": "http://dummyimage.com/240x103.png/cc0000/ffffff",
+      "price": 1900,
+      "nombre": "Chaqueta Impermeable Femenina",
+      "description": "Chaqueta impermeable femenina del Club Nacional de Football, perfecta para el frío y la lluvia."
+    },
+    {
+      "id": 9,
+      "gender": "F",
+      "image": "http://dummyimage.com/200x197.png/dddddd/000000",
+      "price": 650,
+      "nombre": "Cinta para la Cabeza",
+      "description": "Cinta para la cabeza del Club Nacional de Football, diseñada para absorber el sudor durante el ejercicio."
+    },
+    {
+      "id": 10,
+      "gender": "M",
+      "image": "http://dummyimage.com/102x171.png/dddddd/000000",
+      "price": 600,
+      "nombre": "Muñequeras Deportivas",
+      "description": "Muñequeras del Club Nacional de Football, absorbentes y cómodas para el entrenamiento."
+    },
+    {
+      "id": 11,
+      "gender": "M",
+      "image": "http://dummyimage.com/243x139.png/5fa2dd/ffffff",
+      "price": 1500,
+      "nombre": "Gorra Masculina Oficial",
+      "description": "Gorra oficial del Club Nacional de Football, ideal para los días soleados y representar al club."
+    },
+    {
+      "id": 12,
+      "gender": "M",
+      "image": "http://dummyimage.com/128x169.png/cc0000/ffffff",
+      "price": 1200,
+      "nombre": "Buzo Deportivo Masculino",
+      "description": "Buzo deportivo masculino del Club Nacional de Football, perfecto para mantenerte cálido en el entrenamiento."
+    },
+    {
+      "id": 13,
+      "gender": "M",
+      "image": "http://dummyimage.com/199x221.png/cc0000/ffffff",
+      "price": 3000,
+      "nombre": "Sudadera Oficial Masculina",
+      "description": "Sudadera oficial masculina del Club Nacional de Football, perfecta para fanáticos y días frescos."
+    },
+    {
+      "id": 14,
+      "gender": "M",
+      "image": "http://dummyimage.com/138x179.png/cc0000/ffffff",
+      "price": 2090,
+      "nombre": "Pantalón de Entrenamiento Masculino",
+      "description": "Pantalón de entrenamiento del Club Nacional de Football, cómodo y flexible para sesiones intensas."
+    },
+    {
+      "id": 15,
+      "gender": "F",
+      "image": "http://dummyimage.com/172x196.png/dddddd/000000",
+      "price": 4560,
+      "nombre": "Campera Rompevientos Femenina",
+      "description": "Campera rompevientos femenina del Club Nacional de Football, resistente y de alta calidad para el invierno."
+    },
+    {
+      "id": 16,
+      "gender": "F",
+      "image": "http://dummyimage.com/191x203.png/ff4444/ffffff",
+      "price": 2500,
+      "nombre": "Pantalón Casual Deportivo Femenino",
+      "description": "Pantalón casual y deportivo femenino del Club Nacional de Football, cómodo para el uso diario."
+    },
+    {
+      "id": 17,
+      "gender": "M",
+      "image": "http://dummyimage.com/173x202.png/dddddd/000000",
+      "price": 3600,
+      "nombre": "Campera de Invierno Masculina",
+      "description": "Campera de invierno masculina del Club Nacional de Football, ideal para abrigarse en climas fríos."
+    },
+    {
+      "id": 18,
+      "gender": "F",
+      "image": "http://dummyimage.com/115x199.png/ff4444/ffffff",
+      "price": 550,
+      "nombre": "Cintillo Deportivo",
+      "description": "Cintillo deportivo femenino del Club Nacional de Football, ideal para sujetar el cabello durante el ejercicio."
+    },
+    {
+      "id": 19,
+      "gender": "F",
+      "image": "http://dummyimage.com/158x186.png/dddddd/000000",
+      "price": 2300,
+      "nombre": "Chaleco Deportivo Femenino",
+      "description": "Chaleco deportivo femenino del Club Nacional de Football, cómodo y ajustado para entrenamientos."
+    },
+    {
+      "id": 20,
+      "gender": "F",
+      "image": "http://dummyimage.com/154x207.png/ff4444/ffffff",
+      "price": 3200,
+      "nombre": "Chaqueta Premium Femenina",
+      "description": "Chaqueta premium femenina del Club Nacional de Football, con diseño elegante y alta resistencia."
+    }
+  ]
+  
