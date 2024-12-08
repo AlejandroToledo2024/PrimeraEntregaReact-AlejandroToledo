@@ -4,38 +4,50 @@ export default function Item({ product}) {
   
   return (
     <>
-      <div className="flex justify-center items-center min-h-screen ">
-        <div className="max-w-[720px] mx-auto">
-          <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 border-solid border-4 border-blue-700">
-            <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
-              <img
-                src={product.image}
-                alt="card-image"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-6">
-              <div className="flex items-center justify-between mb-2">
-                <p className="block font-sans text-base antialiased font-medium leading-relaxed text-red-700">
-                  {product.nombre}
-                </p>
-                <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-700">
-                 $ {product.price}
-                </p>
-              </div>
-             
-            </div>
-            <div className="p-6 pt-0">
-              <Link
-                className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-                to={`/item/${product.id}`}
-              >
-                Ver más
-              </Link>
-            </div>
-          </div>
-        </div>
+      <div className="flex justify-center items-center min-h-screen">
+  <div className="max-w-[720px] mx-auto">
+    <div className="relative flex flex-col text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl w-96 border-solid border-4 border-blue-700 hover:shadow-2xl transition duration-300">
+      
+     
+      <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-72">
+        <img
+          src={product.image}
+          alt="Imagen del producto"
+          className="object-cover w-full h-full"
+        />
       </div>
+
+      <div className="p-6">
+       
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-lg font-bold text-blue-700">{product.nombre}</h3>
+          <p className="text-lg font-semibold text-red-700">${product.price}</p>
+        </div>
+
+       
+        <p className="text-sm text-gray-600 mb-4">
+          {product?.description || "Sin descripción disponible."}
+        </p>
+
+        <p className="text-sm font-semibold text-gray-700">
+          <span className="text-red-600">STOCK:</span> {product.stock}
+        </p>
+      </div>
+
+      
+      <div className="p-6 pt-0 flex flex-col gap-4">
+        <Link
+          to={`/item/${product.id}`}
+          className="block w-full bg-blue-700 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-800 transition duration-300"
+        >
+          Ver más
+        </Link>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
     </>
   );
 }

@@ -85,6 +85,12 @@ export default function NavbarComponents() {
                   >
                     PANTALONES
                   </Link>
+                  <Link
+              to="/Contacto"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300  hover:bg-red-700 hover:text-white"
+            >
+              CONTACTO
+            </Link>
                 </div>
               </div>
             </div>
@@ -95,8 +101,8 @@ export default function NavbarComponents() {
               >
                 <span className="absolute -inset-1.5"></span>
                 <span className="sr-only">View notifications</span>
-                <CartWidget />
               </button>
+                <CartWidget />
             </div>
           </div>
         </div>
@@ -111,22 +117,28 @@ export default function NavbarComponents() {
               NACIONAL.COM
             </Link>
             <Link
-              to="/remeras"
+              to="/category/remeras"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300  hover:bg-red-700 hover:text-white"
             >
               REMERAS
             </Link>
             <Link
-              to="/accesorios"
+              to="/category/accesorios"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300  hover:bg-red-700 hover:text-white"
             >
               ACCESORIOS
             </Link>
             <Link
-              to="/femenina"
+              to="/category/pantalones"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300  hover:bg-red-700 hover:text-white"
             >
-              ROPA FEMENINA
+              PANTALONES
+            </Link>
+            <Link
+              to="/Contacto"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300  hover:bg-red-700 hover:text-white"
+            >
+              CONTACTO
             </Link>
           </div>
         </div>
