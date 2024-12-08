@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom"; // Importa useNavigate para la redirección
+import BotonPago from "./complementos/BotonPago";
 
 const Cart = () => {
   const { cart, removeItem, clearCart } = useContext(CartContext);
+  
   
 
  
@@ -67,12 +69,7 @@ const Cart = () => {
         </button>
         </Link>
         <Link to={"/checkout"}>
-        <button
-           // Redirige a la ruta principal
-          className="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-green-700"
-        >
-          Continuar al Pago
-        </button>
+       <BotonPago/>
         </Link>
       </div>
           </div>

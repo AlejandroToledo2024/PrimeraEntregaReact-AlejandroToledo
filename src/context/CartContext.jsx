@@ -1,11 +1,11 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 
 export const CartContext = createContext()
-
+const carritoInicial = JSON.parse(localStorage.getItem("cart")) || [];
 
 export const CartProvider = ({children}) =>{
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState(carritoInicial)
     
     const isInCart = (id) =>{
         return cart.some(prod => prod.id === id)
@@ -13,11 +13,11 @@ export const CartProvider = ({children}) =>{
     
     const addItem = (productToAdd, cantidad) => {
         if (!isInCart(productToAdd.id)) {
-          // Agregar un nuevo producto con la cantidad
+          
           setCart((prev) => [...prev, { ...productToAdd, cantidad }]);
           console.log("Producto agregado:", cart);
         } else {
-          // Si ya está en el carrito, actualizamos la cantidad
+          
           setCart((prev) =>
             prev.map((item) =>
               item.id === productToAdd.id
@@ -56,6 +56,11 @@ export const CartProvider = ({children}) =>{
     
     const totalQuantity = getTotalQuantity()
 
+    useEffect (()=>{
+      console.log (cart);
+      console.log({carritoInicial});
+      localStorage.setItem("cart" , JSON.stringify(cart))
+    },[cart])
     
     const obj = {
       cart,
@@ -66,6 +71,7 @@ export const CartProvider = ({children}) =>{
       totalQuantity,
       getTotal
     }; 
+
     return (
         <CartContext.Provider value={obj}>
             {children}

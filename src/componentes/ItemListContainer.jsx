@@ -1,22 +1,32 @@
 import { useEffect, useState } from "react";
+import { getDocs, query, collection, where } from "firebase/firestore";
 
-import { getProducts } from "../data/asyncMock.js";
 import ItemList from "./ItemList.jsx";
 import { useParams } from "react-router-dom";
-import { getProductsByCategory } from "../data/asyncMock.js";
 
-// eslint-disable-next-line react/prop-types
+import { db } from "../data/service/firebase/config.js";
 
 function ItemListContainer() {
   const [products, setProducts] = useState([]);
-  const {id} = useParams();
-  // console.log(id);
+  const { id } = useParams();
+
   useEffect(() => {
-   if (id){ (getProductsByCategory({id}).then(data=> setProducts(data))); }
-   else {(getProducts().then((data) => setProducts(data)))}
-    
+    const collectionRef = id
+      ? query(collection(db, "Productos"), where("categorias", "==", id))
+      : collection(db, "Productos");
+
+    getDocs(collectionRef)
+      .then((querySnapshot) => {
+        const productos = querySnapshot.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        });
+        setProducts(productos);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, [id]);
-  
+
   return (
     <div className="w-full">
       <ItemList products={products} />
