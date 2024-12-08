@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Contacto from "./componentes/contacto.jsx";
 import { CartProvider } from "./context/CartContext.jsx";
 import Cart from "./componentes/Cart.jsx";
+import Checkout from "./componentes/Checkout.jsx";
 
 
 
@@ -27,6 +28,8 @@ function App() {
               <Route path="/item/:id" element={<ItemDetailContainer />} />
               <Route path="/contacto" element={<Contacto />} />
               <Route path="/carrito" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+
            
             </Routes>
           </BrowserRouter>

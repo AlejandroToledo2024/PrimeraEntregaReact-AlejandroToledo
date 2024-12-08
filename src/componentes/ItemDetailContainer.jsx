@@ -4,21 +4,25 @@ import ItemCount from "./ItemCount";
 import { CartContext } from "../context/CartContext";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../data/service/firebase/config";
+import Loader from "./complementos/Loader";
 
 
 function ItemDetailContainer() {
   const { agregarAlCarrito } = useContext(CartContext);
+  const [loader, setLoader] = useState(true)
   const [product, setProduct] = useState({});
   const { id } = useParams();
   useEffect(() => {
     getDoc(doc(db, "Productos", id)).then((data) => {
       const producto = { id: data.id, ...data.data() };
       setProduct(producto);
-    });
+    }).finally(()=>{setLoader(false)})
   }, [id]);
+  
 
   return (
     <>
+    {loader ? <Loader/> : 
       <div className="bg-white border border-blue-400 rounded-lg shadow-lg mb-6 overflow-hidden hover:shadow-xl transition duration-300">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/3 bg-blue-100">
@@ -45,7 +49,7 @@ function ItemDetailContainer() {
             </div>
           </div>
         </div>
-      </div>
+      </div>}
     </>
   );
 }

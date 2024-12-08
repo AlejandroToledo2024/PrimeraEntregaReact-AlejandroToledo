@@ -57,8 +57,7 @@ export const CartProvider = ({children}) =>{
     const totalQuantity = getTotalQuantity()
 
     useEffect (()=>{
-      console.log (cart);
-      console.log({carritoInicial});
+    
       localStorage.setItem("cart" , JSON.stringify(cart))
     },[cart])
     
